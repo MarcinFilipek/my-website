@@ -1,0 +1,9 @@
+@import "../../theme/theme.scss";
+
+.container {
+  width: 100%;
+  border: $border;
+  background: $fill;
+  border-radius: 12px;
+  box-shadow: $shadow;
+}
