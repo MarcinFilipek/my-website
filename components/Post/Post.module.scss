@@ -6,4 +6,32 @@
   background: $fill;
   border-radius: 12px;
   box-shadow: $shadow;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 16px;
+}
+
+.title {
+  color: $header;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.date {
+  width: 100%;
+  text-align: right;
+  color: $body1;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.paragraph {
+  color: $body1;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
