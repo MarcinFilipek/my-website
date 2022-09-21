@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Post.module.scss";
-import art from "./images/2.png";
+import art from "./images/2.webp";
 
 export const Post = () => (
   <div className={styles.container}>
