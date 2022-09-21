@@ -3,7 +3,7 @@
 .container {
   width: 100%;
   background: $fill;
-  border: 1px solid $border;
+  border: $border;
   box-shadow: $shadow;
   border-radius: 12px;
   display: flex;
