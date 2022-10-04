@@ -1,12 +1,8 @@
-import { useRouter } from "next/router";
 import { getPosts } from "../../api/getPosts";
 import { Post as PostContainer } from "../../components";
 
 const Post = ({ post }) => {
-  const router = useRouter();
-  const { id } = router.query;
-  console.log("Id: ", id);
-  return <PostContainer />;
+  return <PostContainer postFields={post.fields} />;
 };
 
 export async function getStaticPaths() {
