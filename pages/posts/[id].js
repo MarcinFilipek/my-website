@@ -8,7 +8,6 @@ const Post = ({ post }) => {
 export async function getStaticPaths() {
   const { posts } = await getPosts();
   const paths = posts.map((post) => ({ params: { id: post.sys.id } }));
-  console.log("Paths: ", paths);
   return { paths, fallback: false };
 }
 

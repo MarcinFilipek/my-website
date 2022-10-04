@@ -6,7 +6,7 @@ export const Post = ({ postFields }) => {
   const imageSize = postFields.postImage.fields.file.details.image;
   return (
     <div className={styles.container}>
-      <Image src={postImageUrl} alt="Post image" {...imageSize} />
+      <Image src={`https:${postImageUrl}`} alt="Post image" {...imageSize} />
       <div className={styles.content}>
         <span className={styles.title}>Post title.</span>
         <p className={styles.date}>10-11-2022</p>
