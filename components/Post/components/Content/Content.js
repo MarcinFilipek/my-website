@@ -7,6 +7,7 @@ export const Content = ({ content }) => {
       {React.Children.toArray(
         content.map((item, i) => {
           const Component = getComponentByContentType(item.nodeType);
+          // eslint-disable-next-line react/jsx-key
           return <Component {...item} />;
         })
       )}
