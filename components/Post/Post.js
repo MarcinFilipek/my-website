@@ -1,16 +1,22 @@
 import Image from "next/image";
 import styles from "./Post.module.scss";
+import { Content } from "./components/Content";
 
-export const Post = ({ postFields }) => {
+export const Post = ({ postFields, createdAt }) => {
   const postImageUrl = postFields.postImage.fields.file.url;
   const imageSize = postFields.postImage.fields.file.details.image;
+  const { postTitle } = postFields;
+  const { content } = postFields.postContent;
+
   return (
     <div className={styles.container}>
       <Image src={`https:${postImageUrl}`} alt="Post image" {...imageSize} />
       <div className={styles.content}>
-        <span className={styles.title}>Post title.</span>
-        <p className={styles.date}>10-11-2022</p>
-        <p className={styles.paragraph}>Post content</p>
+        <div className={styles.titleContainer}>
+          <span className={styles.title}>{postTitle}</span>
+        </div>
+        <Content content={content} />
+        <p className={styles.date}>{new Date(createdAt).toLocaleString()}</p>
       </div>
     </div>
   );
