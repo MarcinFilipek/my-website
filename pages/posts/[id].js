@@ -1,9 +1,9 @@
 import { getPosts } from "../../api/getPosts";
 import { Post as PostContainer } from "../../components";
 
-const Post = ({ post }) => {
-  return <PostContainer postFields={post.fields} />;
-};
+const Post = ({ post }) => (
+  <PostContainer postFields={post.fields} createdAt={post.sys.createdAt} />
+);
 
 export async function getStaticPaths() {
   const { posts } = await getPosts();
