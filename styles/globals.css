@@ -12,6 +12,7 @@ body,
   scrollbar-color: #fb8500 #023047;
   scroll-behavior: smooth;
   font-size: 16px;
+  line-height: 24px;
 }
 
 body::-webkit-scrollbar {
