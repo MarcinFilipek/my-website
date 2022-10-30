@@ -18,17 +18,17 @@ export const Navbar = () => {
         <ul className={styles.menu}>
           <li>
             <Link href="/">
-              <a>Home</a>
+              Home
             </Link>
           </li>
           <li>
             <Link href="/posts">
-              <a>Posty</a>
+              Posty
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a>O mnie</a>
+              O mnie
             </Link>
           </li>
         </ul>
