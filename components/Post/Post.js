@@ -10,7 +10,12 @@ export const Post = ({ postFields, createdAt }) => {
 
   return (
     <div className={styles.container}>
-      <Image src={`https:${postImageUrl}`} alt="Post image" {...imageSize} />
+      <Image
+        src={`https:${postImageUrl}`}
+        alt="Post image"
+        {...imageSize}
+        style={{ width: "100%", height: "auto" }}
+      />
       <div className={styles.content}>
         <div className={styles.titleContainer}>
           <span className={styles.title}>{postTitle}</span>

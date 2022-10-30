@@ -10,10 +10,12 @@ export default function Home({ posts }) {
       <Grid container spacing={1}>
         {posts.map(({ sys, fields }) => (
           <Grid item xs={12} md={6} lg={4} key={sys.id}>
-            <Link href={`/posts/${sys.id}`} passHref>
-              <a style={{ textDecoration: "none" }}>
-                <PostWidget title={fields.postTitle} />
-              </a>
+            <Link
+              href={`/posts/${sys.id}`}
+              passHref
+              style={{ textDecoration: "none" }}
+            >
+              <PostWidget title={fields.postTitle} />
             </Link>
           </Grid>
         ))}
