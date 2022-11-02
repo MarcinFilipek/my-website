@@ -16,15 +16,19 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.5",
+    "@storybook/addons": "^6.5.13",
+    "@storybook/theming": "^6.5.13",
     "contentful": "^9.2.5",
     "eslint-config-next": "^13.0.0",
     "next": "^13.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@react-theming/storybook-addon": "^1.1.7",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
