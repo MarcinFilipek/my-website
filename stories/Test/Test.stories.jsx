@@ -1,25 +1,24 @@
 import React from "react";
-import { withThemes } from "@react-theming/storybook-addon";
-import { ThemeProvider } from "@mui/material";
 
 import { Test } from "./Test";
-import { theme } from "../../theme/ThemeConfig";
 
-const providerFn = ({ theme, children }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
-};
+const Template = (args) => (
+  <div
+    style={{
+      width: "500px",
+      height: "100%",
+      padding: "20px",
+    }}
+  >
+    <Test {...args} />
+  </div>
+);
+
+export const Default = Template.bind({});
+
+Default.args = { text: "Text" };
 
 export default {
   title: "Test",
   component: Test,
-  decorators: [withThemes(null, [theme], { providerFn })],
 };
-
-// export const ToStorybook = () => <Test text={"lol"} />;
-// ToStorybook.story = {
-//   name: "Test",
-// };
-const Template = (args) => <Test {...args} />;
-
-export const Default = Template.bind({});
-Default.args = { text: "Text" };
