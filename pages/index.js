@@ -1,4 +1,5 @@
-import { PostWidget, Welcome } from "../components";
+import { Welcome } from "../components";
+import { PostWidget } from "../stories";
 import { Grid } from "@mui/material";
 import { getPosts } from "../api/getPosts";
 import Link from "next/link";

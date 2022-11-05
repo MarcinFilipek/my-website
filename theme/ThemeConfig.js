@@ -1,21 +1,27 @@
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 import { createGlobalStyle } from "styled-components";
 
-export const theme = createTheme({
-  palette: {
-    primary: {
-      light: "#BF93EC",
-      main: "#853BCE",
+export const theme = responsiveFontSizes(
+  createTheme({
+    palette: {
+      primary: {
+        light: "#BF93EC",
+        main: "#853BCE",
+      },
+      secondary: {
+        main: "#FFFFFF",
+      },
+      text: {
+        primary: "#FFFFFF",
+      },
     },
-    secondary: {
-      main: "#FFFFFF",
+    spacing: 8,
+    typography: {
+      fontSize: 16,
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
-  },
-  spacing: 8,
-  typography: {
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-  },
-});
+  })
+);
 
 export const GlobalStyles = createGlobalStyle`
 * {
