@@ -1,4 +1,4 @@
-// import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { Layout } from "../components";
 import { ThemeProvider } from "@mui/material";
 import { theme, GlobalStyles } from "../theme/ThemeConfig";
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </ThemeProvider>
   );
 }
