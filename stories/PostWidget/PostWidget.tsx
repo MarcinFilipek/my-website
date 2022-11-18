@@ -20,7 +20,11 @@ export const PostWidget = ({ title }: Props) => {
         boxShadow: `0px 4px 24px ${theme.palette.primary.main}26`,
       }}
     >
-      <Typography variant="h6" style={{ color: theme.palette.primary.main }}>
+      <Typography
+        variant="h6"
+        style={{ color: theme.palette.primary.main }}
+        data-testid="title"
+      >
         {title}
       </Typography>
       <Typography
