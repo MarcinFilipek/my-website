@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    style="display: flex; flex-direction: column; width: 100%; padding: 1rem; border: 1px solid #1976d266; background: rgb(16, 13, 33); border-radius: 0.8rem; box-shadow: 0px 4px 24px #1976d226;"
+  >
+    <h6
+      class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+      data-testid="title"
+      style="color: rgb(25, 118, 210);"
+    >
+      Title
+    </h6>
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+      style="color: rgb(156, 39, 176);"
+    >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+  </div>
+</div>
+`;
