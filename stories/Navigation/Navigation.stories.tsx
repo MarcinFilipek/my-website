@@ -19,9 +19,9 @@ export const Default = Template.bind({});
 
 Default.args = {
   navItems: [
-    { id: 0, text: "Home", href: "/" },
-    { id: 0, text: "Blog", href: "/blog" },
-    { id: 0, text: "O mnie", href: "/about" },
+    { id: 0, text: "Home", href: "#" },
+    { id: 0, text: "Blog", href: "#" },
+    { id: 0, text: "O mnie", href: "#" },
   ],
 };
 
