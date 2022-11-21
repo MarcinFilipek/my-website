@@ -20,8 +20,8 @@ export const Default = Template.bind({});
 Default.args = {
   navItems: [
     { id: 0, text: "Home", href: "#" },
-    { id: 0, text: "Blog", href: "#" },
-    { id: 0, text: "O mnie", href: "#" },
+    { id: 1, text: "Blog", href: "#" },
+    { id: 2, text: "O mnie", href: "#" },
   ],
 };
 

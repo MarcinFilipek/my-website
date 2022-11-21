@@ -28,6 +28,6 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const { posts } = await getPosts();
   return {
-    props: { posts }, // will be passed to the page component as props
+    props: { posts },
   };
 }

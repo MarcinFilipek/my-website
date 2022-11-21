@@ -19,6 +19,7 @@ export const Navigation = ({ navItems }: Props) => {
         display: "inline-block",
         padding: "20px",
       }}
+      data-testid="navigation"
     >
       <ul
         style={{
@@ -31,7 +32,7 @@ export const Navigation = ({ navItems }: Props) => {
       >
         {navItems.map((navItem) => (
           <li key={navItem.id}>
-            <Link href={navItem.href}>
+            <Link href={navItem.href} style={{ textDecoration: "none" }}>
               <Typography
                 variant="body1"
                 style={{ color: theme.palette.primary.light }}
