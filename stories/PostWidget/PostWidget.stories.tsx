@@ -20,6 +20,6 @@ export const Default = Template.bind({});
 Default.args = { title: "Title" };
 
 export default {
-  title: "PostWidget",
+  title: "Components/PostWidget",
   component: PostWidget,
 } as ComponentMeta<typeof PostWidget>;
