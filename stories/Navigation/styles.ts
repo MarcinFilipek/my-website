@@ -14,13 +14,16 @@ export const Container = styled("nav")(
 export const StyledUl = styled("ul")(
   ({ theme }) => `
         display: flex;
-          listStyle: none;
-          gap: 50px;
-          padding: 0;
-          margin: 0;`
+        list-style: none;
+        gap: 50px;
+        padding: 0;
+        margin: 0;`
 );
 
-export const StyledLink = styled(Link)(() => `text-decoration: none;`);
+export const StyledLink = styled(Link)(
+  ({ theme }) => `
+  text-decoration: none;`
+);
 
 export const StyledTypography = styled(Typography)(
   ({ theme }) => `color: ${theme.palette.primary.light};`
