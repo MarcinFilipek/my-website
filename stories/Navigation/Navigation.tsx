@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const Navigation = ({ navItems }: Props) => (
-  <Container>
+  <Container data-testid="navigation">
     <StyledUl>
       {navItems.map((navItem) => (
         <li key={navItem.id}>

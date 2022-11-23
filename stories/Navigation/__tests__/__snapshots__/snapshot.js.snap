@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <nav
+    class="css-15bfjca"
+    data-testid="navigation"
+  >
+    <ul
+      class="css-184no2y"
+    >
+      <li>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-159rp9v-MuiTypography-root"
+          data-testid="nav-item-0"
+        >
+          Home
+        </p>
+      </li>
+      <li>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-159rp9v-MuiTypography-root"
+          data-testid="nav-item-1"
+        >
+          Blog
+        </p>
+      </li>
+      <li>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-159rp9v-MuiTypography-root"
+          data-testid="nav-item-2"
+        >
+          About
+        </p>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
