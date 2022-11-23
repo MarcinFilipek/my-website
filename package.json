@@ -10,7 +10,8 @@
     "dev:turbo": "next dev --turbo",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test:all": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
