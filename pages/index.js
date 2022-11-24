@@ -12,7 +12,7 @@ export default function Home({ posts }) {
         {posts.map(({ sys, fields }) => (
           <Grid item xs={12} md={6} lg={4} key={sys.id}>
             <Link
-              href={`/posts/${sys.id}`}
+              href={`/post/${sys.id}`}
               passHref
               style={{ textDecoration: "none" }}
             >
